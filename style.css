@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    color: #000;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: white;
+}
+
+.glassmorphism {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: #000;
+    margin: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p {
+    margin-bottom: 40px;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content {
+    padding: 40px 0;
+    background-color: #ece7d5;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+}
+
+section.module.parallax-1 {
+    background-image: url('https://img.freepik.com/fotos-gratis/decoracao-confortavel-luz-moveis-de-luxo_1203-4995.jpg?w=1480&t=st=1682606290~exp=1682606890~hmac=a1bce79b4af0174fca7d3c8d8b17a1751d400852aaca566a0005807449beba0c');
+}
+
+.list-unstyled {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+    color: #85c;
+    padding: 0 5px;
+    transition: all .3s;
+}
+
+.list-unstyled li a:hover {
+    color: #00bf63;
+}
+
+.list-unstyled li {
+    border-right: 2px solid #85c;
+}
+
+.list-unstyled li:last-child {
+    border: none;
+}
+
+.logo {
+    color: #85c;
+    margin: 0;
+}
+
+.logo b {
+    color: #00bf63;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav h1 {
+    padding: 0 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card strong {
+    font-size: 1.75em;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #85c;
+}
