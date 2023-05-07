@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     color: #242424;
-    font-family: sans-serif;
+    font-family: 'Roboto';
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -30,18 +32,16 @@ h6 {
 
 main {
     display: block;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .glassmorphism {
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-evenly;
     background-color: rgba(255, 255, 255, .8);
     border-radius: 20px;
-    padding: 20px;
-    box-shadow: #000;
+    padding: 45px 20px;
     margin: 40px;
 }
 
@@ -67,14 +67,14 @@ section.module h2 {
 
 section.module.content {
     padding: 40px 0;
-    background-color: #ece7d5;
+    background-color: #ffffff;
 }
 
 section.module.parallax {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh !important;
+    height: 75vh !important;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -87,20 +87,20 @@ section.module.parallax {
     -o-background-size: cover;
 }
 
-section.module.parallax::after {
+/* section.module.parallax::after {
     content: '';
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-}
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 80%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 80%, #000 100%);
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 80%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), 0, rgba(0, 0, 0, 0) 80%, #000 100%);
+} */
 
 section.module.parallax-1 {
-    background-image: url('https://img.freepik.com/fotos-gratis/decoracao-confortavel-luz-moveis-de-luxo_1203-4995.jpg?w=1480&t=st=1682606290~exp=1682606890~hmac=a1bce79b4af0174fca7d3c8d8b17a1751d400852aaca566a0005807449beba0c');
+    background-image: url('./background-1.jpg');
 }
 
 .list-unstyled {
@@ -109,6 +109,7 @@ section.module.parallax-1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
 
 .list-unstyled li a {
@@ -131,6 +132,7 @@ section.module.parallax-1 {
 }
 
 .logo {
+    font-size: 1.4rem;
     color: #85c;
     margin: 0;
 }
@@ -154,13 +156,15 @@ nav h1 {
 .card-container {
     display: flex;
     flex-direction: row;
-    gap: 2;
+    gap: 3;
     align-items: center;
     justify-content: center;
 }
 
 .card {
     display: flex;
+    width: 33%;
+    height: 100%;
     flex-direction: column;
     margin: 10px;
     padding: 20px 40px;
@@ -169,8 +173,60 @@ nav h1 {
 }
 
 .card strong {
-    font-size: 1.75em;
+    font-size: 1.3em;
+    min-height: 50px;
     padding-bottom: 5px;
     margin-bottom: 10px;
     border-bottom: 2px solid #85c;
+}
+
+.glass-img{
+    height: 100%;
+    width: 25%;
+}
+
+.glass-txt{
+    width: 50%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 0.5rem;
+    }
+    .card-container{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 75%;
+        height: auto;
+        padding: 24px;
+    }
+
+    .glassmorphism{
+        width: 90%;
+        margin: 15px auto !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .glass-img{
+        width: 80% !important;
+    }
+    .glass-img img{
+        width: 100%;
+        margin-left: -20px;
+    }
+
+    .glass-txt{
+        width: 90% !important;
+    }
+
+    section.module.parallax{
+        height: 100% !important;
+    }
 }
