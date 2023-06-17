@@ -1,0 +1,28 @@
+.col {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0.25rem;   
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .col {
+        width: 100%;
+    }
+}

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agiliza Hotel | Problema</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/work-us.css" />
 </head>
 
 <body>
@@ -27,15 +28,92 @@
             </nav>
         </header>
         <main>
-            <section>
-                <article>
-                    <h1>
-                        Trabalhe Conosco
-                    </h1>
-                </article>
+            <section class="module parallax parallax-1">
+                <section class="form-section">
+                    <div class="form-divisor">
+                        <header>
+                            <h1>
+                                Trabalhe Conosco
+                            </h1>
+                        </header>
+                        <article>
+                            <form name="work-us" method="POST" action="#">
+                                <div class="row w-100">
+                                    <div class="col w-100">
+                                        <label for="name">
+                                            Nome completo
+                                        </label>
+                                        <input
+                                            id="name"
+                                            name="name"
+                                            type="text"
+                                            placeholder="Digite seu nome..."
+                                            required
+                                        />
+                                    </div>
+                                    <div class="col w-100">
+                                        <label for="email">E-mail de contato</label>
+                                        <input
+                                            id="email"
+                                            name="email"
+                                            type="email"
+                                            placeholder="Digite o e-mail..."
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row w-100">
+                                    <div class="col">
+                                        <label for="area">Area que deseja atuar</label>
+                                        <select
+                                            id="area"
+                                            name="area"
+                                            placeholder="Selecione a área"
+                                            required
+                                        >
+                                            <option>Vendas</option>
+                                            <option>Pesquisa</option>
+                                            <option>Desenvolvimento</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="cv">Currículo</label>
+                                        <input
+                                            id="cv"
+                                            name="cv"
+                                            type="file"
+                                            placeholder="Envie seu currículo"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row w-100">
+                                    <div class="col w-100">
+                                        <label>Sobre você</label>
+                                        <textarea
+                                            class="w-100"
+                                            placeholder="Nos conte um pouco sobre você e sua experiência..."
+                                        ></textarea>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <div class="row justify-end">
+                                        <button
+                                            type="submit"
+                                            class="btn"
+                                        >
+                                            Enviar
+                                        </button>
+                                    </div>
+                                </footer>
+                            </form>
+                        </article>
+                    </div>
+                </section>
             </section>
         </main>
     </div>
+    <footer class="footer">
+        <p style="margin-bottom: 0; padding-top: 20px;">Todos os direitos reservados - 2023. Fatec Jales.</p>
+    </footer>
 </body>
-
 </html>
