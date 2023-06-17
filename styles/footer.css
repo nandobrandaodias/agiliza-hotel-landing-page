@@ -1,6 +1,10 @@
 footer {
-    position: absolute;
-    bottom: 0;
+    background-color: #888;
+    color: white;
+    /* position: absolute;
+    top: 100%; */
     width: 100vw;
-    height: 8vh;
+    height: 75px;
+    z-index: 99;
+    text-align: center;
 }

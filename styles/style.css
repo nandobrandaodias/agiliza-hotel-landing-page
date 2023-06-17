@@ -270,6 +270,10 @@ nav h1 {
     #h1-b{
         margin: 16px auto;
     }
+
+    .btn-primary{
+        margin-top: 12px !important;
+    }
 }
 
 .hr-card{
@@ -326,9 +330,19 @@ nav h1 {
 }
 
 .btn-primary{
-    padding: 6px 12px;
+    margin: 2% 0;
+}
+
+.btn-primary p{
+    padding: 12px 18px;
     background-color: #85c;
-    color: white;
     border-radius: 6px;
-    display: inline-block ;
+    display: inline;
+    width: auto;
+    text-align: center;
+}
+
+.btn-primary a{
+    color: white;
+    text-decoration: none;
 }
