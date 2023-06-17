@@ -170,6 +170,10 @@ nav h1 {
     width: 100%;
 }
  
+.card-2 h2{
+    font-size: 1.4rem !important;
+}
+
 .card strong {
     font-size: 1.3em;
     min-height: 50px;
@@ -346,3 +350,4 @@ nav h1 {
     color: white;
     text-decoration: none;
 }
+
