@@ -79,7 +79,7 @@ section.module.parallax {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 55vh !important;
+    min-height: 50vh !important;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -148,17 +148,28 @@ nav h1 {
     justify-content: center;
 }
 
-.card {
+.card, .card-2{
     display: flex;
-    width: 33%;
     height: 100%;
     flex-direction: column;
-    margin: 10px;
-    padding: 20px 40px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.8);
+    width: 33%;
 }
 
+.card {
+    margin: 10px;
+    padding: 20px 40px;
+}
+
+.card-2{
+    padding: 12px;
+}
+
+.card-2 img{
+    width: 100%;
+}
+ 
 .card strong {
     font-size: 1.3em;
     min-height: 50px;
@@ -177,13 +188,34 @@ nav h1 {
     height: 100%;
 }
 
+#imgArrowDown{
+    display: block;
+    margin: auto;
+}
+
+
 @media screen and (max-width: 768px) {
+    article{
+        margin-top:3%;
+        padding-bottom: 3%;
+    }
+
     nav {
         flex-direction: column;
+        height: auto;
     }
     nav ul {
         margin-top: 0.5rem;
     }
+
+    .list-unstyled{
+        flex-wrap: wrap;
+    }
+
+    .list-unstyled li{
+        padding: 6px;
+    }
+
     .card-container{
         flex-wrap: wrap;
     }
@@ -216,6 +248,32 @@ nav h1 {
     section.module.parallax{
         height: 100% !important;
     }
+
+    .card-container-2{
+        width: 95% !important;
+    }
+
+    .card-2{
+        width: 100%;
+    }
+    
+    .div2{
+        width: 100% !important;
+    }
+
+    .hr-card{
+        display: block !important;
+        width: 100%;
+        margin: 16px 0;   
+    }
+
+    #h1-b{
+        margin: 16px auto;
+    }
+}
+
+.hr-card{
+    display: none;
 }
 
 .contentDiv{
@@ -261,4 +319,16 @@ nav h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+#h1-b{
+    margin-top: 1%;
+}
+
+.btn-primary{
+    padding: 6px 12px;
+    background-color: #85c;
+    color: white;
+    border-radius: 6px;
+    display: inline-block ;
 }
